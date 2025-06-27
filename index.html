@@ -14,7 +14,7 @@
 
          <nav class="navbar" id="navbar">
             <div class="logo">
-                <img src="./images/jd-violet.png" alt="logo">
+                <img src="./images/logo.png" alt="logo">
             </div>
 
             <div class="links" id="links">
@@ -35,9 +35,15 @@
             </div>
 
             <div class="icon-div">
-            <button class="nav-icon" id="nav-icon" onclick="navOpen()">
+
+            <button class="nav-icon" id="nav-open" onclick="navOpen()">
                 <i class="fa-solid fa-bars"></i>
             </button>
+
+            <button class="nav-icon" id="nav-close" onclick="navClose()">
+                     <i class="fa-solid fa-square-xmark"></i>
+            </button>
+
             </div>
 
          </nav>
@@ -82,10 +88,27 @@
 
     </section>
 
-<!-- 
+    
     <section class="intro" id="intro">
-        <div class="first-row"></div>
-    </section> -->
+       
+        <div class="headding">
+            <h1>Who am i ?  <br> What i am doing?</div></h1>
+        </div>
+
+        <div class="content">
+            <p>In this video is showing what iam doing
+                and what i can do and who am i you should 
+                whach this.
+            </p>
+        </div>
+
+        <div class="mp4">
+            <video src="./video/SampleVideo_1280x720_30mb.mp4" controls></video>
+        </div>
+
+    </section>  
+
+
 
     <script src="script.js"></script>
 </body>
