@@ -16,6 +16,7 @@
     padding: 0;
     box-sizing: border-box;
 
+    scroll-behavior: smooth;
 
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
@@ -61,6 +62,7 @@
 
 body{
     background: var(--secondery);
+    color: var(--text);
 }
 
 
@@ -124,8 +126,8 @@ section{
 
 
 .logo img{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -191,8 +193,16 @@ nav{
    width: 120px;
    height: 40px;
    background: transparent;
-   border: 1px solid #fff;
+   border: 2px solid #fff;
    border-radius: 4px;
+   cursor: pointer;
+   font-weight: bold;
+
+}
+
+.contact button:hover{
+    background: var(--text);
+    color: var(--secondery);
 }
 
 
@@ -460,5 +470,114 @@ main{
             padding: 0;
         }
        
+    }
+}
+
+
+
+
+/* ========================================================================================================== */
+/* ========================================================================================================== */
+/* ======================={                 Section Skill Page                    }========================== */
+/* ========================================================================================================== */
+/* ========================================================================================================== */
+
+.skills{
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 150px 1fr;
+}
+
+.skill-head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.skill-set{
+    
+    width: 70%;
+    height: 70%;
+    margin-left: 15%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+   
+}
+
+.skill-cont{
+    width: 150px;
+    height: 110px;
+    display: grid;
+    grid-template-rows: 30px 40px 1fr;
+    justify-content: center;
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    div h2{
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    div p{
+        font-size: 12px;
+    }
+
+    div span i{
+       
+        font-size: 12x;
+        border-radius: 50%;
+    }
+
+    div span{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+}
+
+
+.yellow span{
+    color: yellow;
+    background: #5b5b40a2;
+}
+
+.red span{
+    color: red;
+    background: #5b43439d;
+}
+
+.blue span{
+    color: #5b5bee;
+    background: #393952cf;
+}
+
+/* ========================================================================================================== */
+/*                                  ===========[Responsive]==========                                        */
+/* ========================================================================================================== */
+
+
+@media (max-width:768px) {
+
+    .skills{
+        height: 100%;
+    }
+
+    .skill-set{
+        height: 100%;
+        margin-top: 90px;
+        gap: 55px;
     }
 }
