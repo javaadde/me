@@ -40,7 +40,7 @@ const swiper = new Swiper('.swiper', {
    coverflowEffect:{
     rotate:0,
     stretch:0,
-    depth:150,
+    depth:60,
     modifier:1,
     slideShadows:false,
    },
