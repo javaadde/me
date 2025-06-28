@@ -6,8 +6,13 @@
     <title>it's me jd</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="icon" href="./images/Untitled design (6).png">
+
+
 
 </head>
+
 <body>
     
     <section class="landding-page">
@@ -30,7 +35,7 @@
 
             <div class="contact">
                 <button>
-                Contact 
+                Get In Touch
                 </button>
             </div>
 
@@ -81,7 +86,7 @@
          </aside>
 
          <main>
-            <img src="./images/Screenshot_2025-06-26_174723-removebg-preview.png" alt="my photo">
+            <img src="./images/Mask-Group.png" alt="my photo">
          </main>
 
          </div>
@@ -103,7 +108,11 @@
         </div>
 
         <div class="mp4">
-            <video src="./video/SampleVideo_1280x720_30mb.mp4" controls></video>
+
+            <button class="ply-pse-btn" id="play" onclick="playVid()"><i class="fa-solid fa-play"></i></button>
+            <button class="ply-pse-btn" id="pause" onclick="pauseVid()"><i class="fa-solid fa-pause"></i></button>
+
+            <video src="./video/SampleVideo_1280x720_30mb.mp4"  id="myVideo" ></video>
         </div>
 
     </section>  
@@ -147,7 +156,7 @@
               
                <div class="skill-cont">
 
-                 <div class="skill-icon yellow"> <span> <i class="fa-brands fa-js"></i> </span></div>
+                 <div class="skill-icon red"> <span> <i class="fa-brands fa-js"></i> </span></div>
                  <div class="skill-name"> <h2>Java Script</h2> </div>
                  <div class="skill-content"><p>Create platform with good and freat quality from me</p></div>
                  
@@ -156,7 +165,7 @@
 
                <div class="skill-cont">
 
-                 <div class="skill-icon blue"> <span> <i class="fa-brands fa-css"></i> </span></div>
+                 <div class="skill-icon yellow"> <span> <i class="fa-brands fa-css"></i> </span></div>
                  <div class="skill-name"> <h2>CSS Styling</h2> </div>
                  <div class="skill-content"><p>Create platform with good and freat quality from me</p></div>
                  
@@ -165,7 +174,7 @@
               
                <div class="skill-cont">
 
-                 <div class="skill-icon red"> <span class=""> <i class="fa-brands fa-html5"></i> </span></div>
+                 <div class="skill-icon blue"> <span class=""> <i class="fa-brands fa-html5"></i> </span></div>
                  <div class="skill-name"> <h2>Html5</h2> </div>
                  <div class="skill-content"><p>Create platform with good and freat quality from me</p></div>
                  
@@ -177,6 +186,61 @@
 
 
 
+
+    <section class="projects">
+
+    <div class="proj-head">
+        <h1>My Awesome Projects</h1>
+    </div>
+
+                
+        <div class="swiper image-slider">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/projects/PeENGUIN.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/projects/Untitled design (14).png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/projects/PeENGUIN.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/projects/Untitled design (14).png" alt=""></div>
+            </div>
+
+            
+            <div class="swiper-pagination"></div>
+        
+
+       
+            <div class="swiper-button-prev btn"></div>
+            <div class="swiper-button-next btn"></div>
+           
+        
+        </div>
+
+
+
+
+
+
+        
+
+
+    </section> 
+
+
+
+    <footer class="footer" id="footer">
+
+        <div class="nothing"></div>
+
+        <div class="contents">
+    
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+
+
 </body>
 </html>

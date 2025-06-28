@@ -34,7 +34,7 @@
 
 :root{
   
-    --primery:#391856;
+    --primery:#242628;
     --secondery:#1e1e1e;
     --text:#d7d5d5;
     --blue:#5454D4;
@@ -424,9 +424,9 @@ main{
 .intro{
     color: var(--text);
     display: grid;
-    grid-template-rows: 110px 1fr;
+    grid-template-rows: 90px 1fr;
     grid-template-columns: 1fr 1fr;
-
+    
     .content, .headding{
         
         display: flex;
@@ -436,18 +436,48 @@ main{
     .mp4{
         grid-row: 2;
         grid-column: 1/ span 2 ;
-
-        padding: 50px;
+        width: 100%;
+        height: 80%;
+     
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         video{
             width: 100%;
-            height: 380px;
-            
+            height: 80%;   
         }
+
     }
 
 }
 
+
+.ply-pse-btn{
+   background: var(--text);
+   position: absolute;
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   font-size: 25px;
+   cursor: pointer;
+   border: none;   
+}
+
+#play{
+   background: var(--blue);
+   color: var(--text);
+   visibility: visible;
+   z-index: 3;
+}
+
+#pause{
+    background: #8686a34d; 
+    color: #adc6e7a2;
+    visibility: hidden;
+    z-index: 4;
+}
 
 
 
@@ -481,6 +511,8 @@ main{
 /* ======================={                 Section Skill Page                    }========================== */
 /* ========================================================================================================== */
 /* ========================================================================================================== */
+
+
 
 .skills{
     margin-top: 50px;
@@ -580,4 +612,186 @@ main{
         margin-top: 90px;
         gap: 55px;
     }
+}
+
+
+
+
+
+/* ========================================================================================================== */
+/* ========================================================================================================== */
+/* ======================={              Section projects page                    }========================== */
+/* ========================================================================================================== */
+/* ========================================================================================================== */
+
+
+
+.proj-head{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* image slider */
+
+.image-slider{
+    position: relative;
+    width: 100%;
+    height: 85%;
+    margin-top: 80px;
+}
+
+
+.image-slider .swiper-slide{
+    width: 350px;
+    height: 350px;
+    aspect-ratio: 1/2;
+    border-radius: 14px;
+    user-select: none;
+}
+
+
+.image-slider .swiper-slide-active{
+    animation : blinking 2.2s infinite ease-in-out;
+}
+
+
+@keyframes blinking{
+    50%{
+       border-color: #6419ce;
+    }
+}
+
+
+.image-slider .swiper-slide img{
+   width: 100%;
+   height: 100%;
+   border-radius: 9px;
+   object-fit: cover;
+   pointer-events: none;
+   opacity: 0.5;
+   filter: grayscale(0.6);
+   transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+.image-slider .swiper-slide-active img{
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+
+
+/* navigation buttons */
+
+
+.btn{
+    --swiper-navigation-size:25px;
+    --swiper-navigation-color:var(--text);
+    background: #aba4a4a9;
+    padding: 25px;
+    border-radius: 18%;
+    border: 1px solid #fff;
+    
+}
+
+
+.btn{
+    transform: translateY(170px);
+}
+
+.swiper-button-next{
+    margin-right: 25%;
+}
+
+.swiper-button-prev{
+    margin-left: 25%;
+}
+
+
+
+.swiper-pagination{
+   margin-bottom: 8%;
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--text) !important;
+    width: 15px !important;
+    border-radius: 2px !important;
+}
+
+.swiper-pagination-bullet{
+    background: #fbf6f6ce !important;
+    border-radius: 2px !important;
+}
+
+
+
+
+/* ========================================================================================================== */
+/*                                  ===========[Responsive]==========                                        */
+/* ========================================================================================================== */
+
+
+@media (max-width:768px) {
+
+    .projects{
+        height: 75vh;
+    }
+    
+.image-slider .swiper-slide{
+    width: 200px;
+    height: 200px;
+}
+
+
+.image-slider{
+    position: relative;
+    width: 100%;
+    height: 65%;
+    margin-top: 50px;
+}
+
+
+.btn{
+    transform: translateY(60px);
+    padding: 15px;
+     --swiper-navigation-size:15px;
+}
+
+
+.swiper-pagination{
+   display: none;
+}
+
+}
+
+
+
+
+
+
+/* ========================================================================================================== */
+/* ========================================================================================================== */
+/* ======================={              Footer section of the                    }========================== */
+/* ========================================================================================================== */
+/* ========================================================================================================== */
+
+
+footer{
+    height: 40vh;
+    /* background: var(--primery); */
+    display: grid;
+    grid-template-rows: 20vh 1fr;
+    
+.nothing{
+    background:var(--secondery);
+    height: 20vh;
+}
+
+.contents{
+    background: var(--primery);
+}
+
 }
