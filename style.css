@@ -38,7 +38,8 @@
     --secondery:#1e1e1e;
     --text:#d7d5d5;
     --blue:#5454D4;
-
+    --btn-back:#303a6da1;
+    --btn-color: #7171f5;
 }
 
 
@@ -154,7 +155,7 @@ nav{
         height: 100%;
         display: flex;
         flex-direction: row;
-        gap: 28px;
+        gap: 8px;
         align-items: center;
         justify-content: center;
     }
@@ -170,7 +171,15 @@ nav{
     ul li a{
         text-decoration: none;
         color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+        /* border: 0.5px solid #9898a4; */
+        padding: 5px 15px;
+        border-radius: 13px;
     }
+     ul li a:hover{
+           background: #695d5d81;
+     }
 }
 
 
@@ -186,24 +195,6 @@ nav{
     align-items: center;
 }
 
-
-.contact button{
-
-   color: #fff;
-   width: 120px;
-   height: 40px;
-   background: transparent;
-   border: 2px solid #fff;
-   border-radius: 4px;
-   cursor: pointer;
-   font-weight: bold;
-
-}
-
-.contact button:hover{
-    background: var(--text);
-    color: var(--secondery);
-}
 
 
 
@@ -233,21 +224,48 @@ aside{
     }
 
 
-    .btn-div button{
-     color: #fff;
-     width: 120px;
-     height: 40px;
-     background: var(--blue);
-     cursor: pointer;
-     border: 1px solid transparent;
-     border-radius: 4px;
+    .social-icons{
+       display: flex;
+       gap: 14px;
     }
 
-    .btn-div button:hover{
-      border-color: var(--text);
-    }
-
+   
 }
+
+    
+     .icon-btn-theme{
+        padding: 8px 14px;
+        font-size: 24px;
+        text-decoration: none;
+        background: #2c3239;
+        border: 1px solid rgba(28, 62, 95, 0.904);
+        color:#5b5bee;
+        border-radius: 12px;
+    }
+
+
+    .icon-btn-theme:hover{
+      background: #303a6da1;
+      color: #7171f5;
+    }
+
+
+    .btn-div button{
+     color: #5b5bee;
+     width: 120px;
+     height: 50px;
+     cursor: pointer;
+     background: #2c3239;
+     border: 1px solid rgba(28, 62, 95, 0.904);
+     border-radius: 9px;
+     font-weight: bold;
+    }
+
+    
+    .btn-div button:hover{
+      background: #303a6da1;
+      color: #7171f5;
+    }
 
 
 /* =================== */
@@ -391,9 +409,9 @@ nav .contact{
     
 .row-2{
     display: grid;
-    grid-template-rows: minmax(430px,1fr) 1fr ;
+    grid-template-rows: minmax(460px,1fr) 1fr ;
     grid-template-columns: 1fr;
-
+    gap: 30px;
 }
 
 
@@ -408,9 +426,15 @@ main{
     }
 }
 
+
+
+ .social-icons{
+   flex-wrap: wrap;
+ }
+
+
     
 }
-
 
 
 
@@ -428,7 +452,9 @@ main{
     display: grid;
     grid-template-rows: 90px 1fr;
     grid-template-columns: 1fr 1fr;
-    
+    gap: 30px;
+   
+
     .content, .headding{
         
         display: flex;
@@ -438,8 +464,9 @@ main{
     .mp4{
         grid-row: 2;
         grid-column: 1/ span 2 ;
-        width: 100%;
+        width: 80%;
         height: 80%;
+        margin-left: 10%;
      
         position: relative;
         display: flex;
@@ -448,8 +475,10 @@ main{
 
         video{
             width: 100%;
-            height: 80%;   
+            height: 100%;   
         }
+
+        
 
     }
 
@@ -483,6 +512,7 @@ main{
 
 
 
+
 /* ========================================================================================================== */
 /*                                  ===========[Responsive]==========                                        */
 /* ========================================================================================================== */
@@ -510,26 +540,27 @@ main{
 
 /* ========================================================================================================== */
 /* ========================================================================================================== */
-/* ======================={                 Section Skill Page                    }========================== */
+/* ======================={                 Section projects Page                    }========================== */
 /* ========================================================================================================== */
 /* ========================================================================================================== */
 
 
 
-.skills{
+.projects{
+    height: 110vh;
     margin-top: 50px;
     display: grid;
     grid-template-rows: 100px 1fr;
 }
 
-.skill-head{
+.pro-head{
     width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-.skill-set{
+.pro-set{
     
     width: 70%;
     height: 70%;
@@ -543,18 +574,23 @@ main{
    
 }
 
-.skill-cont{
+.pro-cont{
+
     width: 150px;
-    height: 110px;
+    height: 170px;
     display: grid;
-    grid-template-rows: 30px 40px 1fr;
+    grid-template-rows: 55px 30px 30px 1fr;
     justify-content: center;
+    background: #2c3239;
+    border: 1px solid rgba(28, 62, 95, 0.904);
+    border-radius: 8px;
 
     div{
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
+
     }
 
     div h2{
@@ -562,12 +598,9 @@ main{
         font-size: 16px;
     }
 
-    div p{
-        font-size: 12px;
-    }
+    
 
     div span i{
-       
         font-size: 12x;
         border-radius: 50%;
     }
@@ -580,6 +613,31 @@ main{
         justify-content: center;
         border-radius: 50%;
     }
+
+    .pro-content{
+        font-size: 12px;
+    }
+
+    .pro-buttons{
+        display: flex;
+        gap: 12px; 
+    }
+
+    .btn-theme{
+        padding: 5px;
+        background: #3f4953;
+        border: 1px solid rgba(28, 62, 95, 0.904);
+        border-radius: 4px;
+        text-decoration: none;
+        color: var(--text);
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .btn-theme:hover{
+        background: #5454D4;
+    }
+    
 }
 
 
@@ -605,13 +663,17 @@ main{
 
 @media (max-width:768px) {
 
-    .skills{
+    /* .mob{
+        visibility: hidden;
+    } */
+
+    .projects{
         height: 100%;
     }
 
-    .skill-set{
+    .pro-set{
         height: 100%;
-        margin-top: 90px;
+        margin-top: 10px;
         gap: 55px;
     }
 }
@@ -622,13 +684,14 @@ main{
 
 /* ========================================================================================================== */
 /* ========================================================================================================== */
-/* ======================={              Section projects page                    }========================== */
+/* ======================={              Designs section page                    }========================== */
 /* ========================================================================================================== */
 /* ========================================================================================================== */
 
 
 
-.proj-head{
+.design-head{
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -690,11 +753,11 @@ main{
 
 .btn{
     --swiper-navigation-size:25px;
-    --swiper-navigation-color:var(--text);
-    background: #aba4a4a9;
-    padding: 25px;
-    border-radius: 18%;
-    border: 1px solid #fff;
+    --swiper-navigation-color:#5b5bee;
+        background: #2c3239;
+        padding: 25px;
+        border: 1px solid rgba(28, 62, 95, 0.904);
+        border-radius: 12px;
     
 }
 
@@ -738,8 +801,8 @@ main{
 
 @media (max-width:768px) {
 
-    .projects{
-        margin-top: 120px;
+    .Designs{
+        margin-top: 150px;
         height: 75vh;
     }
     

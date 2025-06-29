@@ -14,18 +14,41 @@ function navOpen(){
 
     let vid = document.getElementById("myVideo");
 
+    let playBtn = document.getElementById("play");
+    let pauseBtn = document.getElementById("pause");
+
+    
+
     function playVid(){
       vid.play();
-      document.getElementById("play").style.visibility="hidden"
-      document.getElementById("pause").style.visibility="visible"
+      playBtn.style.visibility="hidden"
+
+       setTimeout(() => {
+      pauseBtn.style.visibility="visible" 
+       },4000);
+
       console.log("worked");
     }
 
     function pauseVid(){
        vid.pause();
-      document.getElementById("play").style.visibility="visible"
-      document.getElementById("pause").style.visibility="hidden";
+      playBtn.style.visibility="visible"
+      pauseBtn.style.visibility="hidden";
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 const swiper = new Swiper('.swiper', {
