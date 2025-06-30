@@ -97,12 +97,6 @@ const swiper = new Swiper('.swiper', {
      el:".swiper-pagination",
    },
 
-   // mousewheel:{
-   //  invert:false,
-   //  thresholdDelta:50,
-   //  sensitivity:1,
-   // },
-
 
    breakpoints:{
       260:{
@@ -127,4 +121,21 @@ const swiper = new Swiper('.swiper', {
 
 
 });
+
+
+// ===================================
+//           modal functioning
+// ===================================
+
+var modalOpen = document.getElementById("open-modal")
+var modalClose = document.getElementById("close-modal")
+var modal = document.getElementById("modal")
+
+modalOpen.onclick = function(){   
+   modal.style.display="flex";
+}
+
+modalClose.onclick = function(){
+   modal.style.display="none";
+}
 

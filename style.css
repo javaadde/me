@@ -113,9 +113,83 @@ section{
 .landding-page{
     background: var(--secondery);
     /* margin-top: 150px; */
+    position: relative;
 }
 
 
+
+/* modal styling */
+
+
+.mail-modal{
+    width: 50%;
+    height: 75vh;
+    margin-left: 20%;
+    background: #8fa9c665;
+    backdrop-filter: blur(5px);
+    padding: 10px 40px;
+    position: relative;   
+    display:none;
+    position: fixed;
+    border: 1px solid #5454D4;
+    margin-top: 80px;
+    z-index: 9999;
+    border-radius: 12px;
+
+    form{
+        width: 100%;
+    }
+}
+
+.sbmt-btn{
+    margin-top: 22px;
+  display: flex;
+  justify-content: center;   
+}
+
+
+.label-cont{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+ .label-theme{
+       padding: 12px;
+    }
+
+    .input-theme{
+        width: 100%;
+        height: 40px;
+        background-color: #c0c4d7;
+        text-indent: 12px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        outline-color: #5454D4;
+
+        
+    }
+
+    .message{
+        input{
+          height: 100px;
+        }
+    }
+
+    .close-btn{
+        top: 5px;
+        right: 10px;
+        position: absolute;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 10px 20px;
+        background: #aec1d784;
+        color: #5b5bee;
+        border-radius: 12px;
+    }
 
 
 /* Landding page styling */
@@ -185,7 +259,7 @@ nav{
 
      .link-btn:hover{
            background: var(--btn-back);
-           transition: 0.5s ease-in;
+           transition: 0.4s ease;
      }
 }
 
@@ -277,21 +351,20 @@ aside{
 
 
     .btn-div button{
-     color: var(--text);
+     color: var(--btn-color);
      width: 130px;
      height: 40px;
      cursor: pointer;
-     background:var(--blue);
-     border: 1px solid var(--primery);
+     background:#2e2e50c9;
+     border: 1px solid  #1c3e5fe7;
      border-radius: 6px;
-     font-weight: bold;
     }
 
     
     .btn-div button:hover{
       background: #303a6da1;
       color: #7171f5;
-      border-color: rgba(28, 62, 95, 0.904);
+      border-color: #1c3e5fe7;
     }
 
 

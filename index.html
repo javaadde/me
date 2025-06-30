@@ -17,6 +17,33 @@
     
     <section class="landding-page" id="home">
 
+
+        <div class="mail-modal" id="modal">
+            <span class="close-btn" id="close-modal">X</span>
+            <form action="submit">
+                <div class="label-cont">
+                <span class="label-theme">Name</span>
+                <input class="input-theme" type="text" id="name">
+                </div>
+
+                 <div class="label-cont">
+                <span class="label-theme">subject</span>
+                <input class="input-theme" type="text" id="subject">
+                </div>
+
+                 <div class="label-cont message">
+                <span class="label-theme">message</span>
+                <input class="input-theme" type="text" id="message">
+                </div>
+
+                <div class="btn-div sbmt-btn">
+                <button type="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+
+
          <nav class="navbar" id="navbar">
             <div class="logo">
                 <img class="logo" src="./images/logo.png" alt="logo">
@@ -34,7 +61,7 @@
             </div>
 
             <div class="contact">
-                <button>
+                <button id="open-modal">
                 Get In Touch
                 </button>
             </div>
