@@ -1,3 +1,8 @@
+// ==============================
+//  navabar closing and opening 
+// ==============================
+
+
 
 function navClose(){
    document.getElementById("links").style.display="none"
@@ -12,6 +17,12 @@ function navOpen(){
 }
 
 
+
+// ======================
+//  vieo pause and play
+// ======================
+
+
     let vid = document.getElementById("myVideo");
 
     let playBtn = document.getElementById("play");
@@ -23,9 +34,7 @@ function navOpen(){
       vid.play();
       playBtn.style.visibility="hidden"
 
-       setTimeout(() => {
       pauseBtn.style.visibility="visible" 
-       },4000);
 
       console.log("worked");
     }
@@ -39,26 +48,42 @@ function navOpen(){
 
 
 
+// ===============
+//  typing effect
+// ===============
+
+
+var typed = new Typed(".auto-type",{
+      strings: ['Web Developer', 'Web Designer', 'Artist' ,'Graphic Designer'],
+      typeSpeed: 150,
+      loop:true
+});
 
 
 
 
+// =============
+
+
+// =============
 
 
 
 
-
-
-
+// ===========
+//   swiper 
+// ===========
 
 const swiper = new Swiper('.swiper', {
-
+   initialSlide: 2,
    grabCursor:true,
    centeredSlides:true,
    speed:1200,
    spaceBetween:600,
    slidesPerView:"auto",
    effect:"coverflow",
+   loop:true,
+   
    
    coverflowEffect:{
     rotate:0,
@@ -94,6 +119,11 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
+
+  autoplay: {
+   delay: 3000,
+ },
 
 
 });
