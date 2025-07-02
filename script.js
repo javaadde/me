@@ -139,3 +139,23 @@ modalClose.onclick = function(){
    modal.style.display="none";
 }
 
+
+
+// ======== (mailjs) ==============
+
+function sendMail(){
+    console.log("mail")
+    let parms = {
+      name : document.getElementById("name").value,
+      email : document.getElementById("email").value,
+      subject : document.getElementById("subject").value,
+      message : document.getElementById("message").value,
+    }
+
+ console.log(parms)
+
+    emailjs.send("service_9njknlc","template_d8ydzmo",parms).then(console.log("mail sended"))
+
+    
+    
+}

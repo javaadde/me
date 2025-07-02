@@ -11,6 +11,22 @@
 
 
 
+
+    <!-- mailjs -->
+
+       <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+       </script>
+       
+       <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "UMb4Z_WIoX2idXOae",
+            });
+        })();
+        </script>
+
+
 </head>
 
 <body>
@@ -20,27 +36,35 @@
 
         <div class="mail-modal" id="modal">
             <span class="close-btn" id="close-modal">X</span>
-            <form action="submit">
+
+            <form class="int-lab-cont">
+
                 <div class="label-cont">
                 <span class="label-theme">Name</span>
-                <input class="input-theme" type="text" id="name">
+                <input class="input-theme" name="name" type="text" id="name">
                 </div>
 
                  <div class="label-cont">
-                <span class="label-theme">subject</span>
-                <input class="input-theme" type="text" id="subject">
+                <span class="label-theme">Email</span>
+                <input class="input-theme" name="email" type="mail" id="email">
+                </div>
+
+                 <div class="label-cont">
+                <span class="label-theme">Subject</span>
+                <input class="input-theme" name="subject" type="text" id="subject">
                 </div>
 
                  <div class="label-cont message">
-                <span class="label-theme">message</span>
-                <input class="input-theme" type="text" id="message">
+                <span class="label-theme">Message</span>
+                <input class="input-theme" name="message" type="text" id="message">
                 </div>
 
                 <div class="btn-div sbmt-btn">
-                <button type="submit">Submit</button>
+                <button type="submit" onclick="sendMail()">Submit</button>
                 </div>
 
             </form>
+
         </div>
 
 
@@ -108,12 +132,12 @@
            </div>
 
            <div class="social-icons">
-             <a href="" class="icon-btn-theme"> <i class="fa-brands fa-square-github"></i></a>
-             <a href="" class="icon-btn-theme"> <i class="fa-brands fa-square-dribbble"></i> </a>
-             <a href="" class="icon-btn-theme"> <i class="fa-brands fa-square-behance"></i> </a>
-             <a href="" class="icon-btn-theme"> <i class="fa-brands fa-linkedin"></i> </a>
-             <a href="" class="icon-btn-theme"> <i class="fa-brands fa-instagram"></i> </a>
-             <a href="" class="icon-btn-theme"> <i class="fa-brands fa-square-x-twitter"></i> </a>
+             <a href="https://github.com/javaadde" class="icon-btn-theme"> <i class="fa-brands fa-square-github"></i></a>
+             <a href="https://dribbble.com/javaadde" class="icon-btn-theme"> <i class="fa-brands fa-square-dribbble"></i> </a>
+             <a href="https://behance.net/javaadde" class="icon-btn-theme"> <i class="fa-brands fa-square-behance"></i> </a>
+             <a href="https://linkedin.com/javaadde" class="icon-btn-theme"> <i class="fa-brands fa-linkedin"></i> </a>
+             <a href="https://instagram.com/javaadde" class="icon-btn-theme"> <i class="fa-brands fa-instagram"></i> </a>
+             <a href="https://twitter.com/javaadde" class="icon-btn-theme"> <i class="fa-brands fa-square-x-twitter"></i> </a>
            </div>
 
          </aside>
@@ -218,12 +242,36 @@
         <div class="swiper image-slider">
 
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./images/projects/PeENGUIN.png" alt=""></div>
-                <div class="swiper-slide"><img src="./images/projects/monster-al.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./images/projects/Untitled design (14).png" alt=""></div>
-                 <div class="swiper-slide"><img src="./images/projects/PeENGUIN.png" alt=""></div>
-                <div class="swiper-slide"><img src="./images/projects/monster-al.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./images/projects/Untitled design (14).png" alt=""></div>
+                <div class="swiper-slide">
+                    <a href="" class="posted-btn"> <i class="fa-brands fa-behance"></i> </a>
+                    <img src="./images/projects/PeENGUIN.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="" class="posted-btn"> <i class="fa-brands fa-behance"></i> </a>
+                    <img src="./images/projects/monster-al.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="" class="posted-btn"> <i class="fa-brands fa-behance"></i> </a>
+                    <img src="./images/projects/Untitled design (14).png" alt="">
+                </div>
+
+                 <div class="swiper-slide">
+                    <a href="" class="posted-btn"> <i class="fa-brands fa-behance"></i> </a>
+                    <img src="./images/projects/PeENGUIN.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="" class="posted-btn"> <i class="fa-brands fa-behance"></i> </a>
+                    <img src="./images/projects/monster-al.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="" class="posted-btn"> <i class="fa-brands fa-behance"></i> </a>
+                    <img src="./images/projects/Untitled design (14).png" alt="">
+                </div>
+
             </div>
 
             
@@ -260,6 +308,8 @@
     </footer>
 
 
+
+ 
 
     <!-- typed js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>

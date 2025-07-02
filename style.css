@@ -123,7 +123,7 @@ section{
 
 .mail-modal{
     width: 50%;
-    height: 75vh;
+    height: 90vh;
     margin-left: 20%;
     background: #8fa9c665;
     backdrop-filter: blur(5px);
@@ -132,13 +132,13 @@ section{
     display:none;
     position: fixed;
     border: 1px solid #5454D4;
-    margin-top: 80px;
+    margin-top: 20px;
     z-index: 9999;
     border-radius: 12px;
+}
 
-    form{
-        width: 100%;
-    }
+.int-lab-cont{
+    width: 100%;
 }
 
 .sbmt-btn{
@@ -814,6 +814,26 @@ main{
     text-align: center;
 }
 
+/* posted button */
+
+.posted-btn{
+    font-size: 18px;
+    padding: 8px 10px;
+    position: absolute;
+    z-index: 10;
+    background-color: #3f505176;
+    border: 1px solid #0c0c0e;
+    backdrop-filter: blur(2px);
+    border-radius: 12px;
+    bottom: 10px;
+    right: 10px;
+    color: #000;
+}
+
+.sbmt-btn button{
+    background: var(--btn-color);
+    color: var(--text);
+}
 
 /* image slider */
 
@@ -831,6 +851,7 @@ main{
     aspect-ratio: 1/2;
     border-radius: 14px;
     user-select: none;
+    position: relative;
 }
 
 
@@ -862,6 +883,8 @@ main{
     opacity: 1;
     filter: grayscale(0);
 }
+
+
 
 
 
