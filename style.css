@@ -70,7 +70,7 @@ body{
 h1{
         font-size: 28px;
         font-weight: 600;
-        font-family:monospace,sans-serif;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,sans-serif;
     }
 
 
@@ -144,12 +144,12 @@ section{
   
     background: #05060665;
     backdrop-filter: blur(5px);
-    padding: 25px 40px;
+    padding: 25px 20px;
     position: relative;   
     display:none;
     position: fixed;
     border: 1px solid var(--text);
-    margin-top: 10px;
+    margin-top: 5px;
     z-index: 9999;
     border-radius: 12px;
 
@@ -361,9 +361,9 @@ aside{
         padding: 6px 12px;
         font-size: 26px;
         text-decoration: none;
-        background: #2c3239;
-        border: 1px solid rgba(28, 62, 95, 0.904);
-        color:#5b5bee;
+        background:var(--primery);
+        /* border: 1px solid rgba(28, 62, 95, 0.904); */
+        color:var(--blue);
         border-radius: 12px;
     }
 
@@ -408,7 +408,7 @@ main{
 
     /* background images  droped*/
 
-     background-image: 
+     /* background-image: 
      url('./images/vector.png'), url('./images/Ellipse.png'), 
      url('./images/triangle.png') , url('./images/Icon.png');
 
@@ -416,7 +416,7 @@ main{
 
     background-position: 
      left calc(0%) top calc(0%), left calc(100%) top calc(0%),
-     left calc(0%) top calc(100%) , left calc(100%) top calc(100%);
+     left calc(0%) top calc(100%) , left calc(100%) top calc(100%); */
 
     /* this is cool */
   
@@ -484,11 +484,14 @@ nav{
         gap: 18px;
     }
 
-    
+     .links ul a{
+        color: #fff;
+     }
 
     .links{
-        grid-column: 3/3;
-        grid-row: 2/3;
+        grid-column: 2/ 2 span;
+        grid-row: 2/2;
+        margin-top: 12px;
         background:var(--primery);
         backdrop-filter:blur(80%);
     }
@@ -687,7 +690,7 @@ main{
 
 
 .projects{
-    height: auto;
+    /* height: auto; */
     margin-top: 50px;
     display: grid;
     grid-template-rows: 100px 1fr;
@@ -880,14 +883,10 @@ main{
 }
 
 
-.image-slider .swiper-slide-active{
-    animation : blinking 2.2s infinite ease-in-out;
-}
-
 
 @keyframes blinking{
     50%{
-       border-color: #6419ce;
+       border-color: #4239c5;
     }
 }
 
@@ -900,13 +899,16 @@ main{
    pointer-events: none;
    opacity: 0.5;
    filter: grayscale(0.5);
-   transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   transition: ease;
 }
 
 
 .image-slider .swiper-slide-active img{
     opacity: 1;
     filter: grayscale(0);
+    border: 3px solid transparent;
+    animation : blinking 2.2s infinite ease-in-out;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 

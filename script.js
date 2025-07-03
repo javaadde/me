@@ -115,9 +115,9 @@ const swiper = new Swiper('.swiper', {
   },
 
 
-  autoplay: {
-   delay: 3000,
- },
+//   autoplay: {
+//    delay: 3000,
+//  },
 
 
 });
@@ -154,7 +154,7 @@ function sendMail(){
 
  console.log(parms)
 
-    emailjs.send("service_9njknlc","template_d8ydzmo",parms).then(console.log("mail sended"))
+    emailjs.send("service_9njknlc","template_d8ydzmo",parms).then(console.log("ok"));
 
     
     
