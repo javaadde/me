@@ -154,8 +154,29 @@ function sendMail(){
 
  console.log(parms)
 
-    emailjs.send("service_9njknlc","template_d8ydzmo",parms).then(console.log("ok"));
+    emailjs.send("service_9njknlc","template_d8ydzmo",parms).then(alert("Mail Sented"));
 
     
     
 }
+
+
+// =====================================
+// =====================================
+//        ball bouncing
+// ====================================
+// ====================================
+
+
+
+function moveBall(){
+    const btn =   document.getElementById("ball")
+    btn.classList.add("bounce")
+
+    setTimeout(function() {
+        btn.classList.remove("bounce")
+    }, 7000);
+
+    console.log("working")
+}
+

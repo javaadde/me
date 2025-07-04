@@ -148,7 +148,7 @@ section{
     position: relative;   
     display:none;
     position: fixed;
-    border: 1px solid var(--text);
+    border: 1px solid #4239c5;
     margin-top: 5px;
     z-index: 9999;
     border-radius: 12px;
@@ -184,13 +184,13 @@ section{
     .input-theme{
         width: 100%;
         height: 40px;
-        background-color: #818fd6;
+        background-color:#829be43f;
         text-indent: 12px;
         font-size: 16px;
         border: none;
         border-radius: 5px;
         outline-color: #5454D4;
-
+        color: var(--text);
         
     }
 
@@ -208,7 +208,7 @@ section{
         cursor: pointer;
         padding: 10px 20px;
         background: #3373bd35;
-        border: 1px solid var(--text);
+        border: 1px solid #4239c5;
         color:var(--text);
         border-radius: 12px;
     }
@@ -403,7 +403,68 @@ main{
     display: flex;
     justify-content: center;
     
+}
 
+    
+.wrapper{
+    height: 400px;
+    width: 100px;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid #4239c5;
+}
+
+
+
+#ball{
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    background: #3b349c;
+    border-radius: 50%;
+    box-shadow: inset 0 -10px 20px rgb(80, 88, 236);
+    cursor: pointer;
+}
+
+.bounce{
+    animation: bounce 0.7s cubic-bezier(0.49, 0, 0.89, 0.74) infinite alternate;    
+}
+
+
+
+@keyframes bounce {
+
+    0%{
+
+        transform: translateY(0px);
+        height: 100px;
+        width: 100px;
+
+    }
+
+    75%{
+
+        height: 100px;
+        width: 100px;
+
+    }
+
+    90%{
+
+        height: 90px;
+        width: 110px;
+
+    }
+
+    100%{
+
+        transform: translateY(320px);
+        height: 90px;
+        width: 110px;
+    }
+}
 
 
     /* background images  droped*/
@@ -421,13 +482,6 @@ main{
     /* this is cool */
   
 
-    img{
-        width: 340px;
-        height: 380px;
-       
-    }
-
-}
 
 
 /* ========================================================================================================== */
@@ -459,7 +513,7 @@ nav{
     align-items: center;
    
 
-    
+
 
     .logo{
      display: flex;
@@ -553,7 +607,7 @@ aside{
 
 main{
      display: flex;
-     justify-content: right;
+     justify-content: center;
 
     img{
         width: 240px;
