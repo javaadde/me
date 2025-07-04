@@ -351,6 +351,7 @@ aside{
     .social-icons{
        display: flex;
        gap: 14px;
+       
     }
 
    
@@ -1079,6 +1080,17 @@ footer{
 
 .contents{
     background: var(--primery);
+        border-top: 0.5px solid #6369a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #9b97d1;
+
+    a{
+        color: var(--blue);
+        font-weight: bolder;
+    }    
 }
 
 }
