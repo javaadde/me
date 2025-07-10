@@ -141,7 +141,7 @@ modalClose.onclick = function(){
 
 
 
-// ======== (mailjs) ==============
+// ======== (  mailjs) ==============
 
 function sendMail(){
     console.log("mail")
